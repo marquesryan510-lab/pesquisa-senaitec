@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link re="stylesheet" href="./css/style.css">
+    <title>Pesquisa senaiTec</title>
+</head>
+<body>
+    <header>
+    <h1>Pesquisa SenaiTec</h1>
+    </header>
+    <section>
+      <form action=""  method="post">
+
+
+        <fieldset>
+            <legend> Dados Pessoais</legend>
+
+        <label for="user name">Nome:</label>
+        <input type="text" name="userName" id="nome"
+        required>
+      <br>
+    
+        <label for="userBirthDate">Data de nascimento:</label>
+        <input type="date" name="userBirthDate" id="userBirthDate"
+        required min="12" max="100">
+        <br>
+
+        <label for="userEmail">Email:</label>
+        <input type="email" name="userEmail" id="userEmail" required>
+
+         <br>
+
+        <label for="userPhone">Telefone:</label>
+        <input type="tel" name="userPhone" id="userPhone" pattern="[0-9]{11}"
+         placeholder="21987654321">
+
+        <br>
+
+        <label for="userImage"> UploadFoto:</label>
+        <input type="file" name="userImage" id="userImage">
+        
+     </fieldset>
+    
+
+    <button type="submit">Enviar</button>
+
+    
+</form>
+    </section>
+</body>
+</html>
